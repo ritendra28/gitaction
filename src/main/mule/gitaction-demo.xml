@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="gitaction-demoFlow" doc:id="ea7e8cdf-1f27-4395-8f71-1e3f65021fce" >
 		<http:listener doc:name="Listener" doc:id="f775d320-1633-4947-b0a5-d7c9516a889c" config-ref="HTTP_Listener_config" path="/call"/>
+		<logger level="INFO" doc:name="Logger" doc:id="edd6d4cf-d14c-4ea2-bd10-8594c74f2a61" />
 		<logger level="INFO" doc:name="Logger" doc:id="fe567b18-a206-47bb-b5ea-47f8eb08cca6" message="http call made"/>
 	</flow>
 </mule>
